@@ -1,5 +1,3 @@
-
-## sudo bash createLink.sh <C1_name> <C2_Name>
 #!/bin/bash
 
 C1_NAME=$1
