@@ -1,4 +1,4 @@
-# 5G-Edge_Slice
+# 5G-Edge-Slice
 ## Pulling the images
 ```
 docker pull abhic137/ovs:latest
