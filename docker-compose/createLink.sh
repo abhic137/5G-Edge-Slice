@@ -1,4 +1,4 @@
-#!/bin/bash
+
 ## sudo bash createLink.sh <C1_name> <C2_Name>
 #!/bin/bash
 
