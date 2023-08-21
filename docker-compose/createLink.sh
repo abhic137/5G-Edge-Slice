@@ -2,6 +2,7 @@
 
 C1_NAME=$1
 C2_NAME=$2
+LINK_COUNTER=1
 
 createNS(){
     C_ID=$1
@@ -14,7 +15,8 @@ createNS(){
 addLink(){
     C1=$1
     C2=$2
-    LINK_ID=$(uuidgen | cut -d '-' -f1)  # Generate a UUID and use the first part as the interface name
+    LINK_ID="dcp${LINK_COUNTER}"
+    ((LINK_COUNTER++))
     ip link add veth1_l type veth peer veth1_r
     ip link set veth1_l netns ${C1}
     ip link set veth1_r netns ${C2}
